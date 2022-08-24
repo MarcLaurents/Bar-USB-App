@@ -123,3 +123,46 @@ a {
   cursor: pointer;
   margin-top: 100px;
 }
+
+.bi-x-square-fill {
+  color: red;
+  font-weight: bold;
+}
+
+/* ! style rules for shoppingCart */
+
+.shoppingCart {
+  display: grid;
+  grid-template-columns: repeat(1,390px);
+  justify-content: center;
+  gap: 15px;
+}
+
+/* ! style rules for cartItem */
+
+.cartItem {
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+}
+
+.titlePriceX {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titlePrice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cartItemPrice {
+  background-color: #494953;
+  color: #EDF2F6;
+  border: 4px;
+  padding: 3px 6px;
+
+}
