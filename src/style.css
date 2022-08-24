@@ -1,0 +1,125 @@
+/* ?Changing default web margin and padding */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #EDF2F6;
+}
+
+/* ?Navbar style */
+
+.navbar {
+  /* press `d+f+tab` to fast code this line */
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FF5656;
+  color: #EDF2F6;
+  padding: 25px 60px;
+  margin-bottom: 30px; /* fast-code: mb+30px+tab */
+
+}
+
+.cart {
+  position: relative;
+  background-color: #EDF2F6;
+  color: #494953;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+
+}
+
+.cartAmount {
+  position: absolute; /* press `p+o+s+abs+tab` to fast code this line */
+  top: -15px;
+  right: -10px;
+  font-size: 16px;
+  background-color: #6A7EFC;
+  color: #EDF2F6;
+  padding: 3px; /* press `p+3+p+x+tab` to fast code this line */
+  border-radius: 3px; /* press `b+r+s+3+p+x+tab` to fast code this line */
+}
+
+/* ? Shop-items style */
+.shop {
+  display: grid; /* press d+g+tab to fast code this line */
+  grid-template-columns: repeat(4, 223px); /* fast-code: dtc+tab */
+  gap: 30px;
+  justify-content: center; /* fast-code: jcc+tab */
+}
+
+@media (max-width: 1000px) {
+  .shop {
+    grid-template-columns: repeat(2, 223px); /* fast-code: dtc+tab */
+  }
+}
+
+@media (max-width: 500px) {
+  .shop {
+    grid-template-columns: repeat(1, 223px); /* fast-code: dtc+tab */
+  }
+}
+
+.item {
+  border: 2px solid #494953;
+  border-radius: 4px; /* fast-code: brs+4px+tab */
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.bi-dash-square-dotted {
+  color: #EB1D36;
+}
+
+.bi-plus-square-fill {
+  color: #3EC70B;
+}
+
+/* ?Style Rules for Label and some Buttons */
+.textCenter {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.homeButton {
+  background-color: #EB1D36;
+  color: #EDF2F6;
+  border: none;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 100px;
+}
